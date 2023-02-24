@@ -35,7 +35,7 @@ def find_smallest_positive(xs):
         mid = (left + right) // 2
         if left == right:
             if xs[left] == 0:
-                return mid+1
+                return mid + 1
             else:
                 if xs[left] > 0:
                     return mid
@@ -46,10 +46,10 @@ def find_smallest_positive(xs):
         if xs[mid] < 0:
             left = mid + 1
         if xs[mid] == 0:
-            return mid+1
+            return mid + 1
         return go(left, right)
 
-    return go(0, len(xs)-1)
+    return go(0, len(xs) - 1)
 
 
 def helper_function_l(xs, x):
